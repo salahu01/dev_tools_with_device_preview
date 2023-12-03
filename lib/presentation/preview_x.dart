@@ -20,7 +20,7 @@ class PreviewX extends StatelessWidget {
   final bool isToolbarVisible = true;
   final List<Locale>? availableLocales;
   final DeviceInfo? defaultDevice;
-  final List<Widget> tools;
+  final List<Widget>? tools;
   final DevicePreviewStorage? storage;
   final bool enabled = true;
   final Color? backgroundColor;
@@ -29,13 +29,21 @@ class PreviewX extends StatelessWidget {
   Widget build(BuildContext context) {
     return DevicePreview(
       enabled: DevToolsData.isEnabled,
-      tools: const [
-        DevTools(),
-        DeviceSection(),
-        SystemSection(),
-        AccessibilitySection(),
-        SettingsSection(),
-      ],
+      availableLocales: availableLocales,
+      backgroundColor: backgroundColor,
+      data: data,
+      defaultDevice: defaultDevice,
+      devices: devices,
+      isToolbarVisible: isToolbarVisible,
+      storage: storage,
+      tools: tools ??
+          const [
+            DevTools(),
+            DeviceSection(),
+            SystemSection(),
+            AccessibilitySection(),
+            SettingsSection(),
+          ],
       builder: (context) => child,
     );
   }

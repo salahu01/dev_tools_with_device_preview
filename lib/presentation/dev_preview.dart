@@ -2,18 +2,20 @@ import 'dart:core';
 import 'package:dev_tools/dev_tools.dart';
 import 'package:flutter/material.dart';
 
-class PreviewX extends StatelessWidget {
-  const PreviewX({
+class DevPreview extends StatelessWidget {
+  const DevPreview({
     super.key,
     required this.child,
+    required this.isEnabled,
     this.devices,
     this.data,
     this.availableLocales,
     this.defaultDevice,
-    required this.tools,
+    this.tools,
     this.storage,
     this.backgroundColor,
   });
+
   final Widget child;
   final List<DeviceInfo>? devices;
   final DevicePreviewData? data;
@@ -22,13 +24,13 @@ class PreviewX extends StatelessWidget {
   final DeviceInfo? defaultDevice;
   final List<Widget>? tools;
   final DevicePreviewStorage? storage;
-  final bool enabled = true;
   final Color? backgroundColor;
+  final bool isEnabled;
 
   @override
   Widget build(BuildContext context) {
     return DevicePreview(
-      enabled: DevToolsData.isEnabled,
+      enabled: isEnabled,
       availableLocales: availableLocales,
       backgroundColor: backgroundColor,
       data: data,

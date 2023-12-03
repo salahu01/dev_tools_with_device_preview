@@ -1,5 +1,4 @@
-
-import 'package:dev_tools/entities/network_entity.dart';
+import 'package:dev_preview/entities/network_entity.dart';
 import 'package:flutter/material.dart';
 
 final class NetworkServies extends ChangeNotifier {

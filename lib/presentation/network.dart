@@ -1,7 +1,6 @@
-
-import 'package:dev_tools/extensions/extensions.dart';
-import 'package:dev_tools/presentation/individual_network.dart';
-import 'package:dev_tools/services/network_services.dart';
+import 'package:dev_preview/extensions/extensions.dart';
+import 'package:dev_preview/presentation/individual_network.dart';
+import 'package:dev_preview/services/network_services.dart';
 import 'package:flutter/material.dart';
 
 class NetworkView extends StatefulWidget {

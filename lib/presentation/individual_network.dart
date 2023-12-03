@@ -1,5 +1,5 @@
-import 'package:dev_tools/entities/network_entity.dart';
-import 'package:dev_tools/extensions/extensions.dart';
+import 'package:dev_preview/entities/network_entity.dart';
+import 'package:dev_preview/extensions/extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

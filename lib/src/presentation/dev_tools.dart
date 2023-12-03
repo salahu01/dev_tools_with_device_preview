@@ -1,5 +1,5 @@
 import 'package:dev_preview/dev_preview.dart';
-import 'package:dev_preview/extensions/context_extension.dart';
+import 'package:dev_preview/src/extensions/context_extension.dart';
 import 'package:flutter/material.dart';
 
 class DevTools extends StatelessWidget {

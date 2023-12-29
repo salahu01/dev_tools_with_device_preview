@@ -24,7 +24,7 @@ final class NetworkServies extends ChangeNotifier {
   }
 
   ///
-  List<NetworkEntity> get calls => _calls.value;
+  ValueNotifier<List<NetworkEntity>> get calls => _calls;
 
   ///
   void clearCalls() {

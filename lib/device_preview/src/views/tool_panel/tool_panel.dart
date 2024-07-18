@@ -1,4 +1,3 @@
-
 import 'package:dev_preview/device_preview/src/state/store.dart';
 import 'package:dev_preview/device_preview/src/views/theme.dart';
 import 'package:flutter/material.dart';
@@ -80,12 +79,10 @@ class _ToolPanel extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Device preview',
-          style: theme.textTheme.headline6?.copyWith(
+          style: theme.textTheme.headlineSmall?.copyWith(
             fontSize: 14,
             fontWeight: FontWeight.bold,
-            color: (theme.colorScheme.brightness == Brightness.dark
-                ? theme.colorScheme.onSurface
-                : theme.colorScheme.onPrimary),
+            color: (theme.colorScheme.brightness == Brightness.dark ? theme.colorScheme.onSurface : theme.colorScheme.onPrimary),
           ),
         ),
         leading: isModal

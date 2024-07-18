@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 /// An icon for a [TargetPlatform].
 class TargetPlatformIcon extends StatelessWidget {
@@ -48,8 +47,7 @@ class _PathPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(_PathPainter oldDelegate) =>
-      target != oldDelegate.target || color != oldDelegate.color;
+  bool shouldRepaint(_PathPainter oldDelegate) => target != oldDelegate.target || color != oldDelegate.color;
 }
 
 /// All paths are genereted from https://simpleicons.org/ with https://fluttershapemaker.com/

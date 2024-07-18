@@ -1,11 +1,8 @@
-import 'package:dev_preview/dev_preview.dart';
 import 'package:dev_preview/device_preview/device_preview.dart';
-import 'package:dev_preview/device_preview/src/locales/locales.dart';
 import 'package:flutter/widgets.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../utilities/json_converters.dart';
-import 'package:flutter/foundation.dart';
 
 part 'state.freezed.dart';
 part 'state.g.dart';
@@ -79,7 +76,7 @@ class DevicePreviewData with _$DevicePreviewData {
     @Default(false) bool invertColors,
 
     /// Indicate whether image colors are inverted.
-    @Default(<String, Map<String, dynamic>>{}) Map<String, Map<String, dynamic>> pluginData,
+    @Default({}) Map<String, Map<String, dynamic>> pluginData,
 
     /// The current text scaling factor.
     @Default(1.0) double textScaleFactor,
